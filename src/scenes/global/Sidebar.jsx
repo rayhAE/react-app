@@ -20,7 +20,7 @@ import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
-  const colors = tokens(theme.palette.colors);
+  const colors = tokens(theme.palette.mode);
   return (
     <MenuItem
       active={selected === title}
@@ -196,7 +196,7 @@ const Sidebar = () => {
             </Typography>
 
             <Item
-              title="Bae Chart"
+              title="Bar Chart"
               to="/bar"
               icon={<BarChartOutlinedIcon />}
               selected={selected}
